@@ -2,17 +2,23 @@ PODS:
   - Mantle (2.2.0):
     - Mantle/extobjc (= 2.2.0)
   - Mantle/extobjc (2.2.0)
+  - Realm (20.0.0):
+    - Realm/Headers (= 20.0.0)
+  - Realm/Headers (20.0.0)
 
 DEPENDENCIES:
   - Mantle
+  - Realm
 
 SPEC REPOS:
   trunk:
     - Mantle
+    - Realm
 
 SPEC CHECKSUMS:
   Mantle: c5aa8794a29a022dfbbfc9799af95f477a69b62d
+  Realm: a799b5f9145623fb0bfe149fe81422863631dd0f
 
-PODFILE CHECKSUM: bac5b87ad222490f0d4e710156f2f5856263ede1
+PODFILE CHECKSUM: 6687fdae6557b253f60f2da9a1faf21a44ae6987
 
 COCOAPODS: 1.12.1
