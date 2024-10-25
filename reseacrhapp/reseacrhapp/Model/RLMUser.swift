@@ -7,6 +7,7 @@
 
 import RealmSwift
 
+// Realm internal model class. We should not use this model class out of database service
 final class RLMUser: Object {
     @objc dynamic var userId: String = ""
     @objc dynamic var name: String = ""

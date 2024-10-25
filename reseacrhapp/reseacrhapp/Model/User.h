@@ -7,6 +7,7 @@
 
 #import <Mantle/Mantle.h>
 
+// Model class. We use it out of storage
 @interface User : MTLModel <MTLJSONSerializing>
 
 @property (nonatomic, copy, readonly) NSString *userId;
