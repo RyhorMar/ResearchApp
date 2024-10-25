@@ -13,9 +13,11 @@
 		803B32BE2CCB4FA600548B5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 803B32B52CCB4FA600548B5F /* main.m */; };
 		803B32BF2CCB4FA600548B5F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 803B32B92CCB4FA600548B5F /* SceneDelegate.m */; };
 		803B32C12CCB4FA600548B5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 803B32B12CCB4FA600548B5F /* Assets.xcassets */; };
-		803B32C72CCB4FAA00548B5F /* reseacrhappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 803B32C52CCB4FAA00548B5F /* reseacrhappTests.m */; };
 		803B32CB2CCB4FAD00548B5F /* reseacrhappUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 803B32C82CCB4FAD00548B5F /* reseacrhappUITests.m */; };
 		803B32CC2CCB4FAD00548B5F /* reseacrhappUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 803B32C92CCB4FAD00548B5F /* reseacrhappUITestsLaunchTests.m */; };
+		803B32D22CCB542A00548B5F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 803B32D12CCB542A00548B5F /* User.m */; };
+		803B32D62CCB64A400548B5F /* userTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 803B32D52CCB636800548B5F /* userTests.m */; };
+		803B32D72CCB65ED00548B5F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 803B32D12CCB542A00548B5F /* User.m */; };
 		C717ADD69CE8ABFA44F3E87A /* Pods_reseacrhappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F355EA6D51A59B38A111C685 /* Pods_reseacrhappTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,9 +54,11 @@
 		803B32B52CCB4FA600548B5F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		803B32B82CCB4FA600548B5F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		803B32B92CCB4FA600548B5F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		803B32C52CCB4FAA00548B5F /* reseacrhappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = reseacrhappTests.m; sourceTree = "<group>"; };
 		803B32C82CCB4FAD00548B5F /* reseacrhappUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = reseacrhappUITests.m; sourceTree = "<group>"; };
 		803B32C92CCB4FAD00548B5F /* reseacrhappUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = reseacrhappUITestsLaunchTests.m; sourceTree = "<group>"; };
+		803B32D12CCB542A00548B5F /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		803B32D32CCB543100548B5F /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		803B32D52CCB636800548B5F /* userTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = userTests.m; sourceTree = "<group>"; };
 		A382B35B950535935670786B /* Pods-reseacrhapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reseacrhapp.debug.xcconfig"; path = "Target Support Files/Pods-reseacrhapp/Pods-reseacrhapp.debug.xcconfig"; sourceTree = "<group>"; };
 		BC1207043CB0ECE0A18B5D58 /* Pods-reseacrhapp-reseacrhappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reseacrhapp-reseacrhappUITests.release.xcconfig"; path = "Target Support Files/Pods-reseacrhapp-reseacrhappUITests/Pods-reseacrhapp-reseacrhappUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EAB75DD4A5A55C518BB141AE /* Pods-reseacrhapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reseacrhapp.release.xcconfig"; path = "Target Support Files/Pods-reseacrhapp/Pods-reseacrhapp.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,7 +148,7 @@
 		803B32C62CCB4FAA00548B5F /* reseacrhappTests */ = {
 			isa = PBXGroup;
 			children = (
-				803B32C52CCB4FAA00548B5F /* reseacrhappTests.m */,
+				803B32D52CCB636800548B5F /* userTests.m */,
 			);
 			path = reseacrhappTests;
 			sourceTree = "<group>";
@@ -161,6 +165,8 @@
 		803B32CD2CCB52D800548B5F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				803B32D32CCB543100548B5F /* User.h */,
+				803B32D12CCB542A00548B5F /* User.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -208,6 +214,7 @@
 				803B32572CCB4F4F00548B5F /* Sources */,
 				803B32582CCB4F4F00548B5F /* Frameworks */,
 				803B32592CCB4F4F00548B5F /* Resources */,
+				6B429B215AC7411A2B8CE988 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -245,6 +252,7 @@
 				803B327C2CCB4F5200548B5F /* Sources */,
 				803B327D2CCB4F5200548B5F /* Frameworks */,
 				803B327E2CCB4F5200548B5F /* Resources */,
+				43B516C5A39BE868C74A96F1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -346,6 +354,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		43B516C5A39BE868C74A96F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-reseacrhapp-reseacrhappUITests/Pods-reseacrhapp-reseacrhappUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-reseacrhapp-reseacrhappUITests/Pods-reseacrhapp-reseacrhappUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-reseacrhapp-reseacrhappUITests/Pods-reseacrhapp-reseacrhappUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B429B215AC7411A2B8CE988 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-reseacrhapp/Pods-reseacrhapp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-reseacrhapp/Pods-reseacrhapp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-reseacrhapp/Pods-reseacrhapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B289775AEA6C2348837FFF03 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				803B32D22CCB542A00548B5F /* User.m in Sources */,
 				803B32BD2CCB4FA600548B5F /* AppDelegate.m in Sources */,
 				803B32BE2CCB4FA600548B5F /* main.m in Sources */,
 				803B32BF2CCB4FA600548B5F /* SceneDelegate.m in Sources */,
@@ -407,7 +450,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				803B32C72CCB4FAA00548B5F /* reseacrhappTests.m in Sources */,
+				803B32D62CCB64A400548B5F /* userTests.m in Sources */,
+				803B32D72CCB65ED00548B5F /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,7 +571,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -588,7 +632,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
