@@ -9,11 +9,11 @@
 
 @interface User : MTLModel <MTLJSONSerializing>
 
-@property (nonatomic, copy, readonly) NSNumber *userId;
+@property (nonatomic, copy, readonly) NSString *userId;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *email;
 @property (nonatomic, copy) NSNumber *age;
-@property (nonatomic, copy) NSArray *categories;
+@property (nonatomic, copy) NSArray<NSString *> *categories;
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 

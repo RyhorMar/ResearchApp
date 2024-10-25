@@ -5,20 +5,24 @@ PODS:
   - Realm (20.0.0):
     - Realm/Headers (= 20.0.0)
   - Realm/Headers (20.0.0)
+  - RealmSwift (20.0.0):
+    - Realm (= 20.0.0)
 
 DEPENDENCIES:
   - Mantle
-  - Realm
+  - RealmSwift
 
 SPEC REPOS:
   trunk:
     - Mantle
     - Realm
+    - RealmSwift
 
 SPEC CHECKSUMS:
   Mantle: c5aa8794a29a022dfbbfc9799af95f477a69b62d
   Realm: a799b5f9145623fb0bfe149fe81422863631dd0f
+  RealmSwift: f8c4354ebd5053343e6ab9f4eda244145308a51e
 
-PODFILE CHECKSUM: 6687fdae6557b253f60f2da9a1faf21a44ae6987
+PODFILE CHECKSUM: b37edc822624f55621b1612b2625191bac97f3a3
 
 COCOAPODS: 1.12.1

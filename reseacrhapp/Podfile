@@ -6,7 +6,7 @@ target 'reseacrhapp' do
   use_frameworks!
   
   pod 'Mantle'
-  pod 'Realm'
+  pod 'RealmSwift'
 
   # Pods for reseacrhapp
 

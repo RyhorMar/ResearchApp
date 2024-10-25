@@ -44,7 +44,12 @@
     };
 }
 
-+ (instancetype)modelWithDictionary:(NSDictionary *)dictionaryValue error:(NSError *__autoreleasing *)error { 
++ (NSValueTransformer *)categoriesTransformer
+{
+    return [MTLJSONAdapter arrayTransformerWithModelClass:[NSString class]];
+}
+
++ (instancetype)modelWithDictionary:(NSDictionary *)dictionaryValue error:(NSError *__autoreleasing *)error {
     User *user = [[User alloc] initWithDictionary:dictionaryValue];
     return user;
 }
@@ -63,6 +68,5 @@
 - (BOOL)validate:(NSError *__autoreleasing *)error { 
     return [super validate:error] && self.name.length > 0 && self.age > 0;
 }
-
 @end
 

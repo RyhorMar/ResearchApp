@@ -8,7 +8,6 @@
 #import <XCTest/XCTest.h>
 #import "User.h"
 
-
 @interface userTests : XCTestCase
 
 @end
