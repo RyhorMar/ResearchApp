@@ -22,6 +22,11 @@
 		803B32E62CCB745400548B5F /* rlmUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B32E52CCB744300548B5F /* rlmUserTests.swift */; };
 		803B32EB2CCB8BE500548B5F /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B32EA2CCB8BCA00548B5F /* DatabaseService.swift */; };
 		803B32ED2CCB8C0800548B5F /* RealmDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B32EC2CCB8BFD00548B5F /* RealmDatabaseService.swift */; };
+		803B578B2CCD0C6D00548B5F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B578A2CCD0C6200548B5F /* HomeViewController.swift */; };
+		803B579B2CCD114E00548B5F /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803B57972CCD114700548B5F /* ResearchKit.framework */; };
+		803B579C2CCD114E00548B5F /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 803B57972CCD114700548B5F /* ResearchKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		803B579D2CCD115000548B5F /* ResearchKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803B57982CCD114700548B5F /* ResearchKitUI.framework */; };
+		803B579E2CCD115000548B5F /* ResearchKitUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 803B57982CCD114700548B5F /* ResearchKitUI.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C717ADD69CE8ABFA44F3E87A /* Pods_reseacrhappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F355EA6D51A59B38A111C685 /* Pods_reseacrhappTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +46,21 @@
 			remoteInfo = reseacrhapp;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		803B577F2CCB985300548B5F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				803B579E2CCD115000548B5F /* ResearchKitUI.framework in Embed Frameworks */,
+				803B579C2CCD114E00548B5F /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1AE06C2C42684615413FBC9D /* Pods-reseacrhappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reseacrhappTests.release.xcconfig"; path = "Target Support Files/Pods-reseacrhappTests/Pods-reseacrhappTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +89,9 @@
 		803B32E52CCB744300548B5F /* rlmUserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rlmUserTests.swift; sourceTree = "<group>"; };
 		803B32EA2CCB8BCA00548B5F /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 		803B32EC2CCB8BFD00548B5F /* RealmDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDatabaseService.swift; sourceTree = "<group>"; };
+		803B578A2CCD0C6200548B5F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		803B57972CCD114700548B5F /* ResearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ResearchKit.framework; sourceTree = SOURCE_ROOT; };
+		803B57982CCD114700548B5F /* ResearchKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ResearchKitUI.framework; sourceTree = SOURCE_ROOT; };
 		A382B35B950535935670786B /* Pods-reseacrhapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reseacrhapp.debug.xcconfig"; path = "Target Support Files/Pods-reseacrhapp/Pods-reseacrhapp.debug.xcconfig"; sourceTree = "<group>"; };
 		BC1207043CB0ECE0A18B5D58 /* Pods-reseacrhapp-reseacrhappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reseacrhapp-reseacrhappUITests.release.xcconfig"; path = "Target Support Files/Pods-reseacrhapp-reseacrhappUITests/Pods-reseacrhapp-reseacrhappUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EAB75DD4A5A55C518BB141AE /* Pods-reseacrhapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reseacrhapp.release.xcconfig"; path = "Target Support Files/Pods-reseacrhapp/Pods-reseacrhapp.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,7 +103,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				803B579D2CCD115000548B5F /* ResearchKitUI.framework in Frameworks */,
 				17D99D06CE8DCCAFE6564E88 /* Pods_reseacrhapp.framework in Frameworks */,
+				803B579B2CCD114E00548B5F /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +166,8 @@
 		803B32BC2CCB4FA600548B5F /* reseacrhapp */ = {
 			isa = PBXGroup;
 			children = (
+				803B57972CCD114700548B5F /* ResearchKit.framework */,
+				803B57982CCD114700548B5F /* ResearchKitUI.framework */,
 				803B32D02CCB533F00548B5F /* Screens */,
 				803B32CD2CCB52D800548B5F /* Model */,
 				803B32CF2CCB530D00548B5F /* Services */,
@@ -205,8 +232,33 @@
 		803B32D02CCB533F00548B5F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				803B57962CCD10A100548B5F /* DeteiledUserInfo */,
+				803B57952CCD108E00548B5F /* AddUser */,
+				803B57942CCD107D00548B5F /* Home */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		803B57942CCD107D00548B5F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				803B578A2CCD0C6200548B5F /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		803B57952CCD108E00548B5F /* AddUser */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddUser;
+			sourceTree = "<group>";
+		};
+		803B57962CCD10A100548B5F /* DeteiledUserInfo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DeteiledUserInfo;
 			sourceTree = "<group>";
 		};
 		9B0CE535D7C930F23DDDDE8D /* Frameworks */ = {
@@ -231,6 +283,7 @@
 				803B32582CCB4F4F00548B5F /* Frameworks */,
 				803B32592CCB4F4F00548B5F /* Resources */,
 				6B429B215AC7411A2B8CE988 /* [CP] Embed Pods Frameworks */,
+				803B577F2CCB985300548B5F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,6 +364,47 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
+				he,
+				en_AU,
+				ar,
+				el,
+				ja,
+				uk,
+				es_419,
+				zh_CN,
+				es,
+				pt_BR,
+				da,
+				it,
+				sk,
+				pt_PT,
+				ms,
+				sv,
+				cs,
+				ko,
+				no,
+				hu,
+				zh_HK,
+				tr,
+				pl,
+				zh_TW,
+				en_GB,
+				vi,
+				ru,
+				fr_CA,
+				fr,
+				fi,
+				id,
+				nl,
+				th,
+				ro,
+				hr,
+				hi,
+				ca,
+				"zh-Hant-HK",
+				nb,
+				pt,
 			);
 			mainGroup = 803B32522CCB4F4F00548B5F;
 			productRefGroup = 803B325C2CCB4F4F00548B5F /* Products */;
@@ -460,6 +554,7 @@
 				803B32EB2CCB8BE500548B5F /* DatabaseService.swift in Sources */,
 				803B32D22CCB542A00548B5F /* User.m in Sources */,
 				803B32BD2CCB4FA600548B5F /* AppDelegate.m in Sources */,
+				803B578B2CCD0C6D00548B5F /* HomeViewController.swift in Sources */,
 				803B32BE2CCB4FA600548B5F /* main.m in Sources */,
 				803B32DF2CCB6E8F00548B5F /* RLMUser.swift in Sources */,
 				803B32BF2CCB4FA600548B5F /* SceneDelegate.m in Sources */,
@@ -511,6 +606,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = reseacrhapp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -543,6 +642,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = reseacrhapp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
