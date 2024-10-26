@@ -9,7 +9,7 @@
 protocol DatabaseService {
     // Save User to storage
     func save(model: User)
-    
+
     // get Users from storage
     func userList() -> [User]
 }

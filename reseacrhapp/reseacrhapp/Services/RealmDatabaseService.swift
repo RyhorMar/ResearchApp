@@ -15,14 +15,13 @@ final class RealmDatabaseService: DatabaseService {
         try! realm.write {
             realm.add(rlmUser)
         }
-        
     }
-    
+
     // Get Users from database
     func userList() -> [User] {
         let realm = try! Realm()
         let rlmUsers = realm.objects(RLMUser.self)
-        let result: [User] = rlmUsers.map{ User(dictionary: $0.toDictionary()) }
+        let result: [User] = rlmUsers.map { User(dictionary: $0.toDictionary()) }
         return result
     }
 }

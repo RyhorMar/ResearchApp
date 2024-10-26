@@ -14,7 +14,7 @@ final class RLMUser: Object {
     @objc dynamic var age: Int = 0
     @objc dynamic var email: String = ""
     dynamic var categories = List<String>()
-    
+
     @objc dynamic var desc: String {
         return """
             userId: \(String(describing: userId))
@@ -24,11 +24,11 @@ final class RLMUser: Object {
             categories: \(String(describing: categories))
         """
     }
-    
+
     override static func primaryKey() -> String? {
         return "userId"
     }
-    
+
     class func from(model: User) -> RLMUser {
         let rlmUser = RLMUser()
         rlmUser.userId = model.userId
@@ -38,21 +38,21 @@ final class RLMUser: Object {
         let list = List<String>()
         model.categories?.forEach { list.append($0) }
         rlmUser.categories = list
-        
+
         return rlmUser
     }
-    
+
     func toDictionary() -> [AnyHashable: Any] {
         var categoriesForJson = [String]()
-        categories.forEach {
-            categoriesForJson.append($0)
+        for category in categories {
+            categoriesForJson.append(category)
         }
         return [
-            "id" : userId,
+            "id": userId,
             "name": name,
             "age": "\(age)",
             "email": email,
-            "categories": categoriesForJson
+            "categories": categoriesForJson,
         ]
     }
 }

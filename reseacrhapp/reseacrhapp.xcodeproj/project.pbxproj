@@ -284,6 +284,7 @@
 				803B32592CCB4F4F00548B5F /* Resources */,
 				6B429B215AC7411A2B8CE988 /* [CP] Embed Pods Frameworks */,
 				803B577F2CCB985300548B5F /* Embed Frameworks */,
+				803B579F2CCD126F00548B5F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -499,6 +500,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-reseacrhapp/Pods-reseacrhapp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		803B579F2CCD126F00548B5F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftformat > /dev/null; then\n  swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
 		};
 		B289775AEA6C2348837FFF03 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

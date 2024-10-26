@@ -10,17 +10,16 @@ import XCTest
 @testable import reseacrhapp
 
 final class rlmUserTests: XCTestCase {
-    
     func testInit() {
-        let json : [String: Any] = [
+        let json: [String: Any] = [
             "id": "1",
             "name": "Grigorii",
             "age": "45",
             "email": "650451@tut.by",
-            "categories":[
+            "categories": [
                 "category 1",
-                "category 2"
-            ]
+                "category 2",
+            ],
         ]
         let userModel = User(dictionary: json)
         XCTAssertNotNil(userModel)
@@ -28,7 +27,7 @@ final class rlmUserTests: XCTestCase {
             XCTFail("Expected non-nil user")
             return
         }
-        
+
         let rlmUser = RLMUser.from(model: user)
         XCTAssertNotNil(rlmUser)
         XCTAssertEqual(rlmUser.userId, "1")
@@ -41,7 +40,7 @@ final class rlmUserTests: XCTestCase {
         }
         XCTAssertEqual(rlmUser.categories[0], "category 1")
         XCTAssertEqual(rlmUser.categories[1], "category 2")
-        
+
         let userJson = rlmUser.toDictionary()
         XCTAssertNotNil(userJson)
         let userFromRLMModel = User(dictionary: userJson)
