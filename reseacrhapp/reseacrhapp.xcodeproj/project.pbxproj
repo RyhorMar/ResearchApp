@@ -11,7 +11,6 @@
 		2F20C4DB49B7B8D44A780983 /* Pods_reseacrhapp_reseacrhappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C89641B4D8E942DC4CB9A4F /* Pods_reseacrhapp_reseacrhappUITests.framework */; };
 		803B32BD2CCB4FA600548B5F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 803B32B02CCB4FA600548B5F /* AppDelegate.m */; };
 		803B32BE2CCB4FA600548B5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 803B32B52CCB4FA600548B5F /* main.m */; };
-		803B32BF2CCB4FA600548B5F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 803B32B92CCB4FA600548B5F /* SceneDelegate.m */; };
 		803B32C12CCB4FA600548B5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 803B32B12CCB4FA600548B5F /* Assets.xcassets */; };
 		803B32CB2CCB4FAD00548B5F /* reseacrhappUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 803B32C82CCB4FAD00548B5F /* reseacrhappUITests.m */; };
 		803B32CC2CCB4FAD00548B5F /* reseacrhappUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 803B32C92CCB4FAD00548B5F /* reseacrhappUITestsLaunchTests.m */; };
@@ -79,10 +78,7 @@
 		803B32AF2CCB4FA600548B5F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		803B32B02CCB4FA600548B5F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		803B32B12CCB4FA600548B5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		803B32B22CCB4FA600548B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		803B32B52CCB4FA600548B5F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		803B32B82CCB4FA600548B5F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		803B32B92CCB4FA600548B5F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		803B32C82CCB4FAD00548B5F /* reseacrhappUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = reseacrhappUITests.m; sourceTree = "<group>"; };
 		803B32C92CCB4FAD00548B5F /* reseacrhappUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = reseacrhappUITestsLaunchTests.m; sourceTree = "<group>"; };
 		803B32D12CCB542A00548B5F /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
@@ -102,7 +98,6 @@
 		803B57A42CCD19D000548B5F /* AddUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewModel.swift; sourceTree = "<group>"; };
 		803B57A62CCD19E200548B5F /* DetailedUserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedUserInfoViewController.swift; sourceTree = "<group>"; };
 		803B57A82CCD19FB00548B5F /* DetailedUserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedUserInfoViewModel.swift; sourceTree = "<group>"; };
-		8089471D2CCD65D3000603F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A382B35B950535935670786B /* Pods-reseacrhapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reseacrhapp.debug.xcconfig"; path = "Target Support Files/Pods-reseacrhapp/Pods-reseacrhapp.debug.xcconfig"; sourceTree = "<group>"; };
 		BC1207043CB0ECE0A18B5D58 /* Pods-reseacrhapp-reseacrhappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reseacrhapp-reseacrhappUITests.release.xcconfig"; path = "Target Support Files/Pods-reseacrhapp-reseacrhappUITests/Pods-reseacrhapp-reseacrhappUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EAB75DD4A5A55C518BB141AE /* Pods-reseacrhapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reseacrhapp.release.xcconfig"; path = "Target Support Files/Pods-reseacrhapp/Pods-reseacrhapp.release.xcconfig"; sourceTree = "<group>"; };
@@ -177,7 +172,6 @@
 		803B32BC2CCB4FA600548B5F /* reseacrhapp */ = {
 			isa = PBXGroup;
 			children = (
-				8089471D2CCD65D3000603F7 /* Info.plist */,
 				803B57972CCD114700548B5F /* ResearchKit.framework */,
 				803B57982CCD114700548B5F /* ResearchKitUI.framework */,
 				803B32D02CCB533F00548B5F /* Screens */,
@@ -186,10 +180,7 @@
 				803B32CE2CCB52F500548B5F /* Resources */,
 				803B32AF2CCB4FA600548B5F /* AppDelegate.h */,
 				803B32B02CCB4FA600548B5F /* AppDelegate.m */,
-				803B32B82CCB4FA600548B5F /* SceneDelegate.h */,
-				803B32B92CCB4FA600548B5F /* SceneDelegate.m */,
 				803B32B52CCB4FA600548B5F /* main.m */,
-				803B32B22CCB4FA600548B5F /* Info.plist */,
 				803B32E02CCB6E9300548B5F /* reseacrhapp-Bridging-Header.h */,
 				803B32E42CCB728800548B5F /* reseacrhappTests-Bridging-Header.h */,
 			);
@@ -301,7 +292,6 @@
 				803B32592CCB4F4F00548B5F /* Resources */,
 				6B429B215AC7411A2B8CE988 /* [CP] Embed Pods Frameworks */,
 				803B577F2CCB985300548B5F /* Embed Frameworks */,
-				803B579F2CCD126F00548B5F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -580,7 +570,6 @@
 				803B57A52CCD19D900548B5F /* AddUserViewModel.swift in Sources */,
 				803B57A92CCD1A0400548B5F /* DetailedUserInfoViewModel.swift in Sources */,
 				803B32DF2CCB6E8F00548B5F /* RLMUser.swift in Sources */,
-				803B32BF2CCB4FA600548B5F /* SceneDelegate.m in Sources */,
 				803B32ED2CCB8C0800548B5F /* RealmDatabaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -634,7 +623,7 @@
 					"$(PROJECT_DIR)",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = reseacrhapp/Info.plist;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -671,7 +660,7 @@
 					"$(PROJECT_DIR)",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = reseacrhapp/Info.plist;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = "";

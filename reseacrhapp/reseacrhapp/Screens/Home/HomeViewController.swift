@@ -18,7 +18,7 @@ final class HomeViewController: UIViewController {
         let controller = UITableViewController()
         tableView = controller.tableView
         tableView.separatorStyle = .none
-        tableView.backgroundColor = .white
+        tableView.backgroundColor = .red
         view.addSubview(tableView)
         tableView.snp.makeConstraints {
             $0.edges.equalTo(view.safeAreaLayoutGuide)
