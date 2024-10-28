@@ -9,11 +9,11 @@ import RealmSwift
 
 // Realm internal model class. We should not use this model class out of database service
 final class RLMUser: Object {
-    @objc dynamic var userId: String = ""
-    @objc dynamic var name: String = ""
-    @objc dynamic var age: Int = 0
-    @objc dynamic var email: String = ""
-    dynamic var categories = List<String>()
+    @objc @Persisted(primaryKey: true) var userId: String = ""
+    @objc @Persisted var name: String = ""
+    @objc @Persisted var age: Int = 0
+    @objc @Persisted var email: String = ""
+    @Persisted var categories = List<String>()
 
     @objc dynamic var desc: String {
         return """
@@ -25,11 +25,7 @@ final class RLMUser: Object {
         """
     }
 
-    override static func primaryKey() -> String? {
-        return "userId"
-    }
-
-    class func from(model: User) -> RLMUser {
+    @objc class func from(model: User) -> RLMUser {
         let rlmUser = RLMUser()
         rlmUser.userId = model.userId
         rlmUser.name = model.name
