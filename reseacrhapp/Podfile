@@ -8,7 +8,7 @@ target 'reseacrhapp' do
   pod 'Mantle'
   pod 'RealmSwift'#, '~> 10.0'
   pod 'SnapKit'
-
+  
   # Pods for reseacrhapp
 
   target 'reseacrhappTests' do

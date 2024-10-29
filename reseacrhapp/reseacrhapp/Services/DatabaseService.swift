@@ -12,4 +12,7 @@ protocol DatabaseService {
 
     // get Users from storage
     func userList() -> [User]
+    
+    //get all categories
+    func allCategories() -> [String]
 }

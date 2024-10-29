@@ -27,8 +27,6 @@
 		803B579D2CCD115000548B5F /* ResearchKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803B57982CCD114700548B5F /* ResearchKitUI.framework */; };
 		803B579E2CCD115000548B5F /* ResearchKitUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 803B57982CCD114700548B5F /* ResearchKitUI.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		803B57A12CCD19B200548B5F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B57A02CCD19A800548B5F /* HomeViewModel.swift */; };
-		803B57A32CCD19CB00548B5F /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B57A22CCD19B900548B5F /* AddUserViewController.swift */; };
-		803B57A52CCD19D900548B5F /* AddUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B57A42CCD19D000548B5F /* AddUserViewModel.swift */; };
 		803B57A72CCD19F800548B5F /* DetailedUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B57A62CCD19E200548B5F /* DetailedUserInfoViewController.swift */; };
 		803B57A92CCD1A0400548B5F /* DetailedUserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B57A82CCD19FB00548B5F /* DetailedUserInfoViewModel.swift */; };
 		C717ADD69CE8ABFA44F3E87A /* Pods_reseacrhappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F355EA6D51A59B38A111C685 /* Pods_reseacrhappTests.framework */; };
@@ -94,8 +92,6 @@
 		803B57972CCD114700548B5F /* ResearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ResearchKit.framework; sourceTree = SOURCE_ROOT; };
 		803B57982CCD114700548B5F /* ResearchKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ResearchKitUI.framework; sourceTree = SOURCE_ROOT; };
 		803B57A02CCD19A800548B5F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		803B57A22CCD19B900548B5F /* AddUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
-		803B57A42CCD19D000548B5F /* AddUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewModel.swift; sourceTree = "<group>"; };
 		803B57A62CCD19E200548B5F /* DetailedUserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedUserInfoViewController.swift; sourceTree = "<group>"; };
 		803B57A82CCD19FB00548B5F /* DetailedUserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedUserInfoViewModel.swift; sourceTree = "<group>"; };
 		A382B35B950535935670786B /* Pods-reseacrhapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reseacrhapp.debug.xcconfig"; path = "Target Support Files/Pods-reseacrhapp/Pods-reseacrhapp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -236,7 +232,6 @@
 			isa = PBXGroup;
 			children = (
 				803B57962CCD10A100548B5F /* DeteiledUserInfo */,
-				803B57952CCD108E00548B5F /* AddUser */,
 				803B57942CCD107D00548B5F /* Home */,
 			);
 			path = Screens;
@@ -249,15 +244,6 @@
 				803B578A2CCD0C6200548B5F /* HomeViewController.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		803B57952CCD108E00548B5F /* AddUser */ = {
-			isa = PBXGroup;
-			children = (
-				803B57A42CCD19D000548B5F /* AddUserViewModel.swift */,
-				803B57A22CCD19B900548B5F /* AddUserViewController.swift */,
-			);
-			path = AddUser;
 			sourceTree = "<group>";
 		};
 		803B57962CCD10A100548B5F /* DeteiledUserInfo */ = {
@@ -565,9 +551,7 @@
 				803B32BD2CCB4FA600548B5F /* AppDelegate.m in Sources */,
 				803B578B2CCD0C6D00548B5F /* HomeViewController.swift in Sources */,
 				803B57A72CCD19F800548B5F /* DetailedUserInfoViewController.swift in Sources */,
-				803B57A32CCD19CB00548B5F /* AddUserViewController.swift in Sources */,
 				803B32BE2CCB4FA600548B5F /* main.m in Sources */,
-				803B57A52CCD19D900548B5F /* AddUserViewModel.swift in Sources */,
 				803B57A92CCD1A0400548B5F /* DetailedUserInfoViewModel.swift in Sources */,
 				803B32DF2CCB6E8F00548B5F /* RLMUser.swift in Sources */,
 				803B32ED2CCB8C0800548B5F /* RealmDatabaseService.swift in Sources */,

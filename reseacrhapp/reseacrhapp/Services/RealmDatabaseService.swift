@@ -24,4 +24,15 @@ final class RealmDatabaseService: DatabaseService {
         let result: [User] = rlmUsers.map { User(dictionary: $0.toDictionary()) }
         return result
     }
+    
+    //get all categories
+    func allCategories() -> [String] {
+        return [
+            "Programming",
+            "Music",
+            "Sport",
+            "Active games",
+            "Cooking"
+        ]
+    }
 }
